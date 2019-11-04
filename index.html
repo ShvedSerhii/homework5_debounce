@@ -1,24 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link  href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <title>Debounce</title>
-</head>
-<body>
-    <div class="app">
-        <form action="#">
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="sample3">
-            <label class="mdl-textfield__label" for="sample3">Text...</label>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card-body">
+            <div class="card">
+              <div class="wrapper">
+                <div class="app">
+                  <form action="#">
+                    <div
+                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+                    >
+                      <input
+                        class="mdl-textfield__input"
+                        type="text"
+                        id="searchTemplate"
+                      />
+                      <label class="mdl-textfield__label" for="sample3"
+                        >Що шукати?</label
+                      >
+                    </div>
+                  </form>
+                  <form action="#">
+                    <div
+                      class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+                    >
+                      <input
+                        class="mdl-textfield__input"
+                        type="text"
+                        id="inputText"
+                      />
+                      <label class="mdl-textfield__label" for="sample3"
+                        >Текст для пошуку</label
+                      >
+                    </div>
+                  </form>
+                </div>
+                <div class="result">
+                  <p>
+                    Кількість знайдених об'єктів:
+                    <span id="totalResult">0</span>
+                  </p>
+                </div>
+              </div>
             </div>
-        </form>
+          </div>
+        </div>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
