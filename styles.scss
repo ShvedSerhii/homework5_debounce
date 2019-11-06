@@ -1,0 +1,41 @@
+$base-gutter: 8px;
+$app-width: 500px;
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  align-items: center;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.app {
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  max-width: $app-width;
+  width: 100%;
+  background-color: white;
+
+  & > div,
+  form {
+    padding: $base-gutter * 2;
+  }
+}
+
+.mdl-textfield {
+  width: 100%;
+}
